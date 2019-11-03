@@ -2,7 +2,10 @@
 
 function mytheme_customize_register($wp_customize) {
 
-
+    $wp_customize->add_section( 'formative_sidebarLocationSection' , array(
+        'title'      => __('Sidebar Location','1902FormativeCustom'),
+        'priority'   => 32,
+    ) );
 
     $wp_customize->add_setting('formative_backgroundColour' , array(
         'default' => '#7fdba0',
@@ -18,6 +21,11 @@ function mytheme_customize_register($wp_customize) {
         'default' => '#2dc6c6',
         'transport' => 'refresh'
     ));
+
+    $wp_customize->add_setting( 'formative_sidebarLocation' , array(
+        'default' => 'left',
+        'transport' => 'refresh',
+    ) );
 
 
     $wp_customize->add_control( new WP_Customize_Color_Control(
@@ -43,6 +51,19 @@ function mytheme_customize_register($wp_customize) {
             'section' => 'colors',
             'settings' => 'formative_footerColour'
         ) ) );
+
+    $wp_customize->add_control(
+        new WP_Customize_Control( $wp_customize, 'formative_sidebarLocation', array(
+            'label'    => __( 'Control Label', '1902FormativeCustom' ),
+            'section'  => 'formative_sidebarLocationSection',
+            'settings' => 'formative_sidebarLocation',
+            'type'     => 'radio',
+            'choices'  => array(
+                'left'  => 'left',
+                'right' => 'right',
+            ),
+        )
+    ) );
 
 
             }
