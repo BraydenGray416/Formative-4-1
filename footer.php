@@ -1,5 +1,5 @@
 <?php if (has_nav_menu('bottom_navigation')): ?>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark footer mt-5" role="navigation">
+    <nav class="navbar navbar-expand-md navbar-dark footer mt-5" role="navigation">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
