@@ -33,6 +33,23 @@ function register_navwalker(){
 
 add_action( 'after_setup_theme', 'register_navwalker' );
 
+register_default_headers( array(
+    'defaultImage' => array(
+        'url'           => get_template_directory_uri() . '/assets/images/crafts2.jpg',
+        'thumbnail_url' => get_template_directory_uri() . '/assets/images/crafts2.jpg',
+        'description'   => __( 'The default image for the custom header.', '1902FormativeCustom' )
+    )
+) );
+
+$customeHeaderDefaults = array(
+    'width' => 1280,
+    'height' => 720,
+    'default-image' => get_template_directory_uri() . '/assets/images/crafts2.jpg'
+);
+add_theme_support('custom-header', $customeHeaderDefaults);
+
+add_theme_support('wp-block-styles');
+
 function add_custom_post_types(){
 
     $args = array(
