@@ -58,8 +58,7 @@
             </nav>
 
         <?php endif; ?>
-        <img src="<?php echo get_theme_mod('1902_bottomImage'); ?>" alt=""style="width: 100%;">
-        <h5 class="display-3 d-flex justify-content-center"><?php echo get_theme_mod('1902_bottomImageText'); ?></h5>
+        
     </div>
 <?php endif; ?>
 

@@ -37,7 +37,7 @@ function mytheme_customize_register($wp_customize) {
         ) ) );
 
     $wp_customize->add_control(new WP_Customize_Color_Control(
-        $wp_customize, 'fomrative_headerColourControl', array(
+        $wp_customize, 'formative_headerColourControl', array(
             'label' =>__('Header Colour', '1902FormativeCustom'),
             'description' => 'Change the header colour',
             'section' => 'colors',
@@ -45,7 +45,7 @@ function mytheme_customize_register($wp_customize) {
         ) ) );
 
     $wp_customize->add_control(new WP_Customize_Color_Control(
-        $wp_customize, 'fomrative_footerColourControl', array(
+        $wp_customize, 'formative_footerColourControl', array(
             'label' =>__('Footer Colour', '1902FormativeCustom'),
             'description' => 'Change the footer colour',
             'section' => 'colors',
@@ -53,7 +53,7 @@ function mytheme_customize_register($wp_customize) {
         ) ) );
 
     $wp_customize->add_control(
-        new WP_Customize_Control( $wp_customize, 'formative_sidebarLocation', array(
+        new WP_Customize_Control( $wp_customize, 'formative_sidebarLocationControl', array(
             'label'    => __( 'Control Label', '1902FormativeCustom' ),
             'section'  => 'formative_sidebarLocationSection',
             'settings' => 'formative_sidebarLocation',

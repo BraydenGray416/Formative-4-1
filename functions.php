@@ -13,7 +13,7 @@ function addCustomFormativeThemeFiles_1902(){
 add_action('wp_enqueue_scripts', 'addCustomFormativeThemeFiles_1902');
 
 
-add_theme_support('post-thumbnails', array('post', 'movie'));
+add_theme_support('post-thumbnails', array('post', 'product'));
 
 add_image_size('icon', 50, 50, true);
 
